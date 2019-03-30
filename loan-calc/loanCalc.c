@@ -18,6 +18,6 @@ int main(){
     printf("\nMonthly payment should be: %lf ", A);
     printf("\n===============AMORTIZATION SCHEDULE===============\n");
     printf("#        Payment        Principal        Interest        Balance\n\n");
-    printf("         %lf         %lf         %lf         %lf", A, P,  );
+    printf("         %lf         %lf         %lf         %lf", A, P);
     return 0;
 }
