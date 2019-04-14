@@ -20,7 +20,8 @@ int main(){
     i++;
    } while(i < 5);
    // print the size of the array
-   printf("sizeof(numbers) = %lu\n", sizeof(numbers));
+   printf("sizeof (numbers) = %lu\n", sizeof(numbers));
+   printf("lengthof (numbers) = %lu\n", sizeof(numbers)/sizeof(numbers[0]));
 
  return 0;
 }
