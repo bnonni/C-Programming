@@ -1,0 +1,45 @@
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+
+// void main()
+// {
+//   int i, j=0, k=0;
+//   char sentence[100], sent_arr[10][20], word[20];
+  
+//   printf("Please enter a string: ");
+//   gets(sentence);
+
+//   for (i = 0; sentence[i] != '\0'; i++)
+//   {
+//     if (sentence[i] == ' ')
+//     {
+//       sent_arr[k][j] = '\0';
+//       k++;
+//       j=0;
+//     }else
+//     {
+//       sent_arr[k][j] = sentence[i];
+//       j++;
+//     }
+//   }
+//   sent_arr[k][j] = '\0';
+//   printf("Please enter the word to be removed:");
+//   scanf("%s", word);
+
+//   for(i = 0; i < k+1; i++)
+//   {
+//     if(strcmp(sent_arr[i], word) == 0)
+//     {
+//       for(j = i; j < k+1; j++)
+//       {
+//         strcpy(sent_arr[j], sent_arr[j+1]);
+//         k--;
+//       }
+//     }
+//   }
+//   printf("Result: ");
+//   for(i = 0; i < k+1; i++){
+//     printf("%s", sentence[i]);
+//   }
+// }
