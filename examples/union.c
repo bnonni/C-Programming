@@ -28,29 +28,29 @@ int main()
     return 0;
 }
 
-public static boolean isAllVowels(String s) {
-        int i = 0;
-         for ( ; i< s.length(); i++){
-                 if(!isVowel(s.charAt(i)))
-            return false;
-            }
-        
-        return true;
-}
+// public static boolean isAllVowels(String s) {
+//         int i = 0;
+//          for ( ; i< s.length(); i++){
+//                  if(!isVowel(s.charAt(i)))
+//             return false;
+//             }
+//         
+//         return true;
+// }
 
-public static boolean isVowel(char ch){
-    switch(ch){
-                        case 'a':
-                        case 'e':
-                        case 'i':
-                        case 'o':
-                        case 'u':
-                        case 'A':
-                        case 'E':
-                        case 'I':
-                        case 'O':
-                        case 'U':  return true;
-                        default :  return false;  
-                }
-}
+// public static boolean isVowel(char ch){
+//     switch(ch){
+//                         case 'a':
+//                         case 'e':
+//                         case 'i':
+//                         case 'o':
+//                         case 'u':
+//                         case 'A':
+//                         case 'E':
+//                         case 'I':
+//                         case 'O':
+//                         case 'U':  return true;
+//                         default :  return false;  
+//                 }
+// }
 
