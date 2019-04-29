@@ -8,6 +8,7 @@ int main()
  float n, average_word_len, word_count, space_count;
  printf("Enter a sentence: ");
  scanf("%[^\n]s",sentence);
+ printf("%s\n", sentence);
  for(i = 0; i < 30; i++){
   if(sentence[i] == space){
    space_count += 1;
