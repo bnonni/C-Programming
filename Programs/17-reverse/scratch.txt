@@ -1,0 +1,22 @@
+#include <stdio.h>
+#define N 50
+
+int main()
+{
+	int arr[N],i=0;
+	char c;
+	printf("Enter a message: ");
+	while((c = getchar() != '\n'))
+	{
+		arr[i] = c;
+		i++;
+	}
+			
+	printf("Reversal is: ");
+	for(int j = N; j >= 0; j--)
+	{
+		putchar(arr[j]);
+	}
+printf("\n");
+return  0;
+}

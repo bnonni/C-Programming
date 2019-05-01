@@ -1,3 +1,0 @@
-This is a test file.
-A file that Contains Lots ofg text to TEST MY alphabet letter count c script.
-Hello Atlanta!
