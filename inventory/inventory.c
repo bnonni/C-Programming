@@ -12,12 +12,11 @@ struct part{
 
 int num_parts = 0;
 
-int find_part(int number){
+ int find_part(int number);
  void insert(void);
  void search(void);
  void update(void);
  void print(void);
-}
 
 int main(void){
  char code;
@@ -94,7 +93,7 @@ void update(void){
  int i, number, change;
 
  printf("Enter part number: ");
- scaNF("%d", &number);
+ scanf("%d", &number);
  i = find_part(number);
  if(i >= 0){
   printf("Enter change in quantity on hand: ");

@@ -6,13 +6,18 @@
 void* countG(void  *off){
     int offset;
     offset=*((int *)off); // the argument is passed to the work function
+
     printf("the passed offset is %d\n", offset);
+    
     FILE *fp;
     fp = fopen("Chrom1","r");
+    
     fseek(fp,offset,SEEK_SET);
+    
     char ch;
     int count=0;
     int num=0;
+    
     while((ch = fgetc(fp)) != EOF && num<OFFSET){
         if(ch=='G') count++;
         num++;
