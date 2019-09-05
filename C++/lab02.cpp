@@ -4,7 +4,7 @@
 #include <string.h>
 //Simplifies our I/O code
 using namespace std;
-
+  
 //Pre-define variables used in program
 int A = 0b00, T = 0b01, C = 0b10, G = 0b11, i = 0, j = 0, len, gene_val, gene_arr[] = {};
 
