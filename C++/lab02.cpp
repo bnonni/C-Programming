@@ -6,7 +6,7 @@
 using namespace std;
   
 //Pre-define variables used in program
-int A = 0b00, T = 0b01, C = 0b10, G = 0b11, i = 0, j = 0, len, gene_val, gene_arr[] = {};
+int A = 0b00, T = 0b01, C = 0b10, G = 0b11, i = 0, j = 0, len, gene_val, gene_arr[100], padding;
 
 int geneLength(string str);
 int sequenceGene(string gene);
@@ -17,17 +17,28 @@ int sequenceGene(string gene);
 */
 
 
-int main(int argc, char** argv)
+int main(int argc, char *argv[])
 {
- if(strncmp(argv[1], "-c", 2))
+ string flag = argv[1], c = " -c ", d = " -d ", gene = argv[2];
+ if(flag.compare(c))
  {
   len = geneLength(argv[2]);
+  if(len % 4 != 0){
+    padding = len - 4; 
+    if(padding < 0){
+      padding *= -1;
+    }
+    for(int k = 0; k <= padding; k++)
+    {
+      gene = gene + "0";
+    }
+  }
   while(j <= len){
-   gene_val = sequenceGene(argv[2]);
+   gene_val = sequenceGene(gene);
    gene_arr[j] = gene_val;
    j++;
   }
-  cout << len << gene_arr[0] << gene_arr[1];
+  cout << len << " " << gene_arr[0] << " " << gene_arr[1];
  }
  // else if(strncmp(argv[1], "-d", 2)){}
  else
@@ -42,10 +53,10 @@ int geneLength(string str)
  return str.length();
 }
 
-int intsequenceGene(string gene)
+int sequenceGene(string gene, int l)
 {
  int val;
- while(i <= len)
+ while(i <= l)
  {
    if(gene[i] == A)
    {
@@ -60,9 +71,7 @@ int intsequenceGene(string gene)
    {
     val += G;
    }
-  
   i++;
  }
- len -= 4;
  return val;
 }
