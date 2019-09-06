@@ -68,7 +68,7 @@ int geneLength(string str)
  return str.length();
 }
 
-//this is a comment 
+
 /** example for reference
  input: ./lab02.out -c ATTCGG
  output: 6 22 240

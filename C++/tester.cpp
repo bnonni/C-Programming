@@ -2,6 +2,8 @@
 #include <iostream>
 //Import string library header
 #include <string.h>
+#include <math.h>
+#include <cstdlib>
 //Simplifies our I/O code
 using namespace std;
   
@@ -23,39 +25,23 @@ int main(int argc, char *argv[])
 
  if(flag.compare(c))
  { 
+  int gene = atoi(gene);
    //compressed_bits |= A
    // 00000000 & A => 00000000 |= 01 = 000000000
   length = geneLength(argv[2]);
   double check = ceil(length % 4);
+  
+  cout << check;
 
   if(check != 0){
-    for(i = 0; i <= check; i++)
+    for(i = 0; i < check; i++){
       gene = gene + "0";
-  }
-  while(i <= 4){ 
-   if(gene[i] == A)
-   {
-    compressed_bits |= A;
-    compressed_bits << 2;
-   }else if(gene[i] == T)
-   {
-    compressed_bits |= T;
-    compressed_bits << 2;
-   }else if(gene[i] == C)
-   {
-    compressed_bits |= C;
-    compressed_bits << 2;
-   }else
-   {
-    compressed_bits |= G;
-    compressed_bits << 2;
-   }
-   i++;
+    }
   }
   // gene_value = sequenceGene();
-  cout << length << " " << compressed_bits << "\n";
+  cout << length << " " << gene;
  }
- // else if(strncmp(argv[1], "-d", 2)){}
+ // else if(strncmp(argv[1], "-d", 2)){ }
  else
  {
   cout << "ERROR: -c or -d flag required.\n";
@@ -68,7 +54,7 @@ int geneLength(string str)
  return str.length();
 }
 
-//this is a comment 
+
 /** example for reference
  input: ./lab02.out -c ATTCGG
  output: 6 22 240
