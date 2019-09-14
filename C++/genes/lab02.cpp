@@ -2,6 +2,8 @@
 #include <iostream>
 //Import string library header
 #include <string.h>
+#include <math.h>
+
 //Simplifies our I/O code
 using namespace std;
   
