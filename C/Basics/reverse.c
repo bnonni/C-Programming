@@ -1,5 +1,5 @@
 /* reverse.c */
-#include<stdio.h>
+#include <stdio.h>
 
 #define N 50
 
@@ -10,7 +10,7 @@ int main(){
     printf("Enter a message: ");
 	
     // Get input from user by using getchar()
-	while((ch=getchar())!='\n'){
+	while( (ch=getchar()) != '\n' ){
 		arr[i]=ch;
         i++;
     }

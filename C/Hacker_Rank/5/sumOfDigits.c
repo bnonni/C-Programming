@@ -6,8 +6,9 @@
 int main() 
 {	
     int n, nDigits, i, t = 0, j = 0, digits[10];
+    printf("Enter a number: ");
     scanf("%d", &n);
-    nDigits = Math.floor(Math.log10(Math.abs(n))) + 1;
+    nDigits = floor(log10(abs(n))) + 1;
     while(j < nDigits)
     {
      for(i = 0; i < nDigits; i++)
@@ -18,6 +19,6 @@ int main()
      t += digits[i];
      j++;
     }
-
+    printf("%d\n", t);
     return 0;
 }
