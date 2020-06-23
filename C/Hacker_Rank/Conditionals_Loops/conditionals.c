@@ -17,8 +17,43 @@ int main()
     int n = strtol(n_str, &n_endptr, 10);
 
     if (n_endptr == n_str || *n_endptr != '\0') { exit(EXIT_FAILURE); }
-
-    // Write Your Code Here
+    if(1 <= n && n <= 9)
+    {
+        switch(n)
+        {
+            case 1:
+                printf("%s\n", "one");
+                break;
+            case 2:
+                printf("%s\n", "two");
+                break;
+            case 3:
+                printf("%s\n", "three");
+                break;
+            case 4:
+                printf("%s\n", "four");
+                break;
+            case 5:
+                printf("%s\n", "five");
+                break;
+            case 6:
+                printf("%s\n", "six");
+                break;
+            case 7:
+                printf("%s\n", "seven");
+                break;
+            case 8:
+                printf("%s\n", "eight");
+                break;
+            case 9:
+                printf("%s\n", "nine");
+                break;
+        }
+     }
+     else
+     {
+        printf("%s\n", "Greater than 9");
+     }
 
     return 0;
 }

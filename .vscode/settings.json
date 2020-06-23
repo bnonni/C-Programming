@@ -3,6 +3,7 @@
         "*.js": "javascript",
         "*.dart": "dart",
         "*.html": "html",
+        "*.rmd": "markdown",
         "stdio.h": "c",
         "stdlib.h": "c",
         "arrayutil.h": "c",
@@ -80,6 +81,7 @@
         "vector": "cpp",
         "*.tcc": "cpp",
         "memory_resource": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "pointers.C": "cpp"
     }
 }
