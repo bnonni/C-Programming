@@ -9,13 +9,14 @@ int main() {
     s = malloc(1024 * sizeof(char));
     scanf("%[^\n]", s);
     s = realloc(s, strlen(s) + 1);
-    for (char *c = s; *c != NULL; c++) {
-     if(*c == " ")
-      printf("%s", "\n");
-     else
-      printf("%c", *c);
+    int len = strlen(s);
+    for(int i = 0; i < len; i++)
+    {
+      if (s[i] == ' ')
+        printf("\n");
+      else
+        printf("%c", s[i]);
     }
-    // printf("%s", s);
-
+    printf("\n");
     return 0;
 }

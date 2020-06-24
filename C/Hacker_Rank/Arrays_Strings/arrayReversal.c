@@ -6,11 +6,14 @@ int main()
     int num, *arr, i, k;
     scanf("%d", &num);
     arr = (int*) malloc(num * sizeof(int));
+    
     for(i = 0; i < num; i++)
     {
         scanf("%d", &arr[i]);
     }
+    
     k = num - 1;
+    
     for(i = 0; i < num; i++)
     {
      int temp = arr[i];
